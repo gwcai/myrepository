@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".VideoActivity" >
+
+    <FrameLayout
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >     
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="250dp">
+        <TextView 
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="#FFCC33"/>
+        <TextView 
+            android:id="@+id/dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#FFCC33"/>
+         <TextView 
+            android:id="@+id/minute"
+            android:layout_width="wrap_content"
+            android:textColor="#FFCC33"
+            android:text="00"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+         <TextView 
+            android:id="@+id/dot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="#FFCC33"/>
+          <TextView 
+            android:id="@+id/second"
+            android:textColor="#FFCC33"
+            android:text="00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+	 <Button	     
+	     android:layout_below="@id/time"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+         android:id="@+id/start"            
+         android:text="start" />
+
+</RelativeLayout>
